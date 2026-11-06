@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop List Sidebar - Organic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style/shop.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<!-- ================= SHOP HEADER ================= -->
+<header class="shopHeader">
+    <div class="shContainer">
+
+        <!-- الشريط العلوي -->
+        <div class="shTop">
+            <div class="one  ">
+            <p class="shFree">Free shipping on all orders over $99</p>
+            <div class="shTopLinks">
+                <a href="#">Become A Vendor</a>
+                <a href="#">Order Tracking</a>
+                <a href="#">My Wishlist</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- اللوجو + السيرش + الأيقونات -->
+        <div class="shMiddle">
+            <div class="shLogoWrap">
+                <i class="fa-solid fa-bars shBurger" id="smOpen"></i>
+                <a href="index.html" class="shLogo">
+                    <img src="../images/images01.png" alt="Organi">
+                </a>
+            </div>
+
+            <form class="shSearch">
+                <span class="shSearchCat">All |</span>
+                <input type="search" placeholder="What are you shopping for?">
+                <button type="submit" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="shIcons">
+                <a href="#" class="shIcon"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="shIcon"><i class="fa-regular fa-heart"></i></a>
+                <a href="#" class="shIcon shCart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="shBadge">2</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- اللينكات -->
+      <nav class="shNav">
+    <ul class="shMenu">
+
+        <!-- Home -->
+        <li class="shItem">
+            <a href="./index.html" class="shLink active">Home</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Home Pages</p>
+                <li><a href="./index.html">Home V.1</a></li>
+                <li><a href="./index.html">Home V.2</a></li>
+                <li><a href="./index.html">Home V.3</a></li>
+                <li><a href="./index.html">Home V.4</a></li>
+                <li><a href="./index.html">Home V.5</a></li>
+                <li><a href="./index.html">Home V.6</a></li>
+            </ul>
+        </li>
+
+        <!-- Shop -->
+        <li class="shItem">
+            <a href="" class="shLink">Shop</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Shop Pages</p>
+                <li><a href="">Shop Sidebar</a></li>
+                <li><a href="">Shop List</a></li>
+                <li><a href="">Shop List 3</a></li>
+                <li><a href="">Shop List 4</a></li>
+                <li><a href="">Shop List 5</a></li>
+                <li><a href="">Shop List 6</a></li>
+            </ul>
+        </li>
+
+        <!-- Blog -->
+        <li class="shItem">
+            <a href="#" class="shLink">Blog</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Blog Pages</p>
+                <li><a href="#">Blog Details</a></li>
+                <li><a href="#">Blog Grid</a></li>
+                <li><a href="#">Blog List 1</a></li>
+                <li><a href="#">Blog List 2</a></li>
+                <li><a href="#">Blog List 3</a></li>
+                <li><a href="#">Blog List 4</a></li>
+            </ul>
+        </li>
+
+        <!-- Portfolio (من غير dropdown) -->
+        <li class="shItem">
+            <a href="#" class="shLink">Portfolio</a>
+        </li>
+
+        <!-- Pages (Mega) -->
+        <li class="shItem shMegaItem">
+            <a href="#" class="shLink">Pages</a>
+            <div class="shMega">
+                <div class="shMegaPromo">
+                    <img src="../images/images03.png" alt="">
+                    <div class="shMegaText">
+                        <span>100% Pure</span>
+                        <h4>Natural Vegetable</h4>
+                        <p>Fresh Vegetables Sale 30% Off</p>
+                        <a href="#" class="shMegaBtn">View More</a>
+                    </div>
+                </div>
+
+                <div class="shMegaCol">
+                    <h5>All Inner Page</h5>
+                    <ul>
+                        <li><a href="#">Cart Page</a></li>
+                        <li><a href="#">Faqs Page</a></li>
+                        <li><a href="#">About Us V.1</a></li>
+                        <li><a href="#">About Us V.2</a></li>
+                        <li><a href="#">Checkout Page</a></li>
+                        <li><a href="#">Compare Page</a></li>
+                    </ul>
+                </div>
+
+                <div class="shMegaCol">
+                    <h5>All Inner Page</h5>
+                    <ul>
+                        <li><a href="#">Vendor Page</a></li>
+                        <li><a href="#">Vendor Profile</a></li>
+                        <li><a href="#">Vendor Dashboard</a></li>
+                        <li><a href="#">Product Details V.1</a></li>
+                        <li><a href="#">Product Details V.2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Veg Sales -->
+        <li class="shItem">
+            <a href="#" class="shLink">Veg Sales</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Sales Pages</p>
+                <li><a href="#">Veg Offers</a></li>
+                <li><a href="#">Fruit Offers</a></li>
+                <li><a href="#">Weekly Deals</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!-- <a href="#" class="shRecent">Recent Viewed Products <i class="fa-solid fa-arrow-right"></i></a> -->
+</nav>
+    </div>
+
+    <!-- الخط الملون -->
+    <div class="shLine"></div>
+</header>
+
+
+<!-- ================= SHOP HERO ================= -->
+<section class="shopHero">
+    <div class="shopHeroContent">
+        <h1>Shop List Sidebar</h1>
+        <ul class="breadcrumb">
+            <li class="bcHome"><i class="fa-solid fa-house"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Dried</a></li>
+        </ul>
+    </div>
+</section>
+
+
+
+<!-- ================= SHOP CONTENT ================= -->
+<section class="shopContent">
+  <div class="scWrapper">
+
+    <!-- ========== Sidebar ========== -->
+    <aside class="scSidebar">
+
+      <div class="scSearch">
+        <input type="search" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- Categories -->
+      <div class="scBox">
+        <h3 class="scBoxTitle">Categories</h3>
+        <ul class="scCats">
+          <li><label><input type="checkbox"><span class="scCheck"></span>Beverages</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Biscuits, Snacks</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Breakfast &amp; Dairy</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Fruits &amp; Vegetables</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Home Needs</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Grocery &amp; Staples</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Home &amp; Kitchen</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Household Needs</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Meats, Frozen</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Noodles, Sauces</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Personal Care</label></li>
+          <li><label><input type="checkbox"><span class="scCheck"></span>Pet Care</label></li>
+        </ul>
+      </div>
+
+      <!-- Filter By Price -->
+      <div class="scBox">
+        <h3 class="scBoxTitle">Filter By Price</h3>
+        <div class="scRange">
+          <span class="scDot scDot1"></span>
+          <span class="scDot scDot2"></span>
+        </div>
+        <div class="scFilterRow">
+          <a href="#" class="scFilterBtn">FILTER <i class="fa-solid fa-arrow-right"></i></a>
+          <span class="scPriceText">$10 - $3409</span>
+        </div>
+      </div>
+
+      <!-- Trending Items -->
+      <div class="scBox">
+        <h3 class="scBoxTitle">Trending Items</h3>
+
+        <div class="scTrend">
+          <img src="../images/images24.png" alt="">
+          <div>
+            <h5>Mango Juices</h5>
+            <div class="scTrendPrice"><span class="old">$22</span><span class="new">$18</span></div>
+            <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+          </div>
+        </div>
+
+        <div class="scTrend">
+          <img src="../images/images08.png" alt="">
+          <div>
+            <h5>Beef Steak</h5>
+            <div class="scTrendPrice"><span class="old">$22</span><span class="new">$18</span></div>
+            <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+          </div>
+        </div>
+
+        <div class="scTrend">
+          <img src="../images/images27.png" alt="">
+          <div>
+            <h5>Broccoli</h5>
+            <div class="scTrendPrice"><span class="old">$22</span><span class="new">$18</span></div>
+            <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+          </div>
+        </div>
+
+        <div class="scTrend">
+          <img src="../images/images28.png" alt="">
+          <div>
+            <h5>Strawberries</h5>
+            <div class="scTrendPrice"><span class="old">$22</span><span class="new">$18</span></div>
+            <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+          </div>
+        </div>
+
+        <div class="scTrend">
+          <img src="../images/images29.png" alt="">
+          <div>
+            <h5>Body Lotion</h5>
+            <div class="scTrendPrice"><span class="old">$22</span><span class="new">$18</span></div>
+            <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+          </div>
+        </div>
+
+        <a href="#" class="scViewMore">VIEW MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </aside>
+
+    <!-- ========== Main ========== -->
+    <div class="scMain">
+
+      <!-- شريط الأدوات -->
+      <div class="scToolbar">
+        <div class="scToolLeft">
+          <button class="scViewBtn active" id="gridBtn" aria-label="Grid"><i class="fa-solid fa-grip"></i></button>
+          <button class="scViewBtn"  id="listBtn" aria-label="List"><i class="fa-solid fa-list"></i></button>
+          <span class="scResults">Showing 1–18 of 24 results</span>
+        </div>
+        <div class="scSort">
+          <span>Default Sorting:</span>
+          <select>
+            <option>Popularity</option>
+            <option>Nothing</option>
+            <option>Popularity</option>
+            <option>Organic</option>
+            <option>fantastic</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- شبكة المنتجات -->
+      <div class="scGrid">
+
+        <!-- Card 1 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images24.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images08.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images08.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images27.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images27.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images28.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images28.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images29.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images29.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images30.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images30.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images31.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" id="listBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" id="gridBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images31.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images32.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images32.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images53.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="scCard">
+          <div class="scBadges"><span class="scTag">MEATS</span><span class="scOff">-27%</span></div>
+          <div class="scImg">
+            <img class="scImgDefault" src="../images/images53.png" alt="Organic Cabbage">
+            <img class="scImgHover" src="../images/images24.png" alt="Organic Cabbage">
+            <div class="scActions">
+              <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="scInfo">
+            <div class="scRating">
+              <span class="scStars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+              <span class="scRate">(4.0)</span>
+               <p class="scDesc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+    <div class="scListBtns">
+        <button class="scActBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="scActBtn" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+            </div>
+            <h4 class="scName">Organic Cabbage</h4>
+            <div class="scPrice"><span class="new">$50.00</span><span class="old">$65.00</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- Pagination -->
+<ul class="scPagination">
+    <li><a href="#" class="active">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#" class="scNext" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></a></li>
+</ul>
+</section>
+
+
+<!-- ================= SHOP FOOTER ================= -->
+<footer class="organic-footer">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center gy-4 text-center text-md-start">
+                <div class="col-12 col-lg-3 col-md-4">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+                        <span class="logo-text">Organi<span>.</span><small>FRESH PRODUCT</small></span>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-6 col-md-8">
+                    <form class="subscribe-form">
+                        <input type="tel" placeholder="Your Phone Number" aria-label="Your Phone Number" required>
+                        <button type="submit">Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="Google Plus"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 col-md-6 col-lg-3 footer-column">
+                    <div class="footer-widget">
+                        <h4>Why People Like us</h4>
+                        <p class="footer-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Build your online store with WooCommerce the most popular.</p>
+                        <a href="#" class="footer-button">View More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 footer-column">
+                    <div class="footer-widget">
+                        <h4>Information</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 footer-column">
+                    <div class="footer-widget">
+                        <h4>My Account</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">International Orders</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 footer-column">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <ul class="contact-list">
+                            <li><strong>Address:</strong> <span>1429 Netus Rd, NY 48247</span></li>
+                            <li><strong>Email:</strong> <a href="mailto:Organi@gmail.com">Organi@gmail.com</a></li>
+                            <li><strong>Phone:</strong> <a href="tel:+8748864174">(+87) 4886-4174</a></li>
+                            <li class="payment-title"><strong>Payment Accepted</strong></li>
+                        </ul>
+                        <div class="payment-methods">
+                            <span>VISA</span><span class="mastercard">MasterCard</span><span>Maestro</span><span>PayPal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-12 col-lg-6"><p class="copyright">Copyright &copy; 2026 <span>ORGANI</span> Inc. All rights reserved.</p></div>
+                <div class="col-12 col-lg-6">
+                    <ul class="bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Sales and Refunds</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+
+
+<!-- ================= SIDE MENU ================= -->
+<div class="smOverlay" id="smOverlay"></div>
+
+<aside class="smPanel" id="smPanel">
+    <button class="smClose" id="smClose" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <ul class="smList">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+</aside>
+
+<!-- زرار الرجوع لفوق -->
+<a href="#" class="scToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="../js/shop.js"></script>
+  <!-- <script src="../js/comon.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,954 @@
+
+
+
+/* =========================================
+   SHOP RESPONSIVE
+   From 320px to 1400px+
+========================================= */
+
+/* منع خروج العناصر خارج الشاشة */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =========================================
+   LARGE LAPTOPS
+   1200px - 1400px
+========================================= */
+
+@media (max-width: 1400px) {
+
+    .shContainer {
+        width: 95%;
+    }
+
+    .scWrapper {
+        max-width: 1200px;
+        padding: 0 25px;
+        gap: 25px;
+    }
+
+    .scSidebar {
+        flex: 0 0 260px;
+    }
+
+    .scGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .scCard {
+        padding: 20px 18px 25px;
+    }
+
+    .scName {
+        font-size: 19px;
+    }
+
+    .scTrend {
+        grid-template-columns: 75px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .scTrend img {
+        width: 75px;
+    }
+}
+
+/* =========================================
+   SMALL LAPTOPS
+   992px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .scWrapper {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .scSidebar {
+        flex: 0 0 230px;
+    }
+
+    .scBox {
+        padding: 22px 18px;
+    }
+
+    .scBoxTitle {
+        font-size: 21px;
+    }
+
+    .scGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .scCard {
+        padding: 22px 18px;
+    }
+
+    .scImg {
+        height: 190px;
+    }
+
+    .scName {
+        font-size: 20px;
+    }
+
+    .scToolbar {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .scSort {
+        padding: 10px 12px;
+    }
+
+    .scTrend {
+        grid-template-columns: 65px minmax(0, 1fr);
+    }
+
+    .scTrend img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .scTrend h5 {
+        font-size: 15px;
+    }
+
+    /* List View */
+    .scGrid.listView .scCard {
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .scGrid.listView .scImg {
+        flex: 0 0 230px;
+        height: 210px;
+    }
+
+    .scGrid.listView .scBadges {
+        left: 280px;
+        top: 35px;
+    }
+
+    .scGrid.listView .scName {
+        font-size: 23px;
+    }
+}
+
+/* =========================================
+   TABLETS
+   768px - 991px
+========================================= */
+
+@media (max-width: 991px) {
+
+    /* Header */
+    .shContainer {
+        width: 94%;
+    }
+
+    .shMiddle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .shLogoWrap {
+        flex: 1;
+    }
+
+    .shSearch {
+        order: 3;
+        flex: 1 0 100%;
+        width: 100%;
+    }
+
+    .shIcons {
+        display: flex;
+        align-items: center;
+    }
+
+    .shNav {
+        display: none;
+    }
+
+    .shBurger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Hero */
+    .shopHero {
+        min-height: 280px;
+    }
+
+    .shopHeroContent h1 {
+        font-size: 38px;
+    }
+
+    .breadcrumb {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    /* Shop Content */
+    .shopContent {
+        padding: 65px 0;
+    }
+
+    .scWrapper {
+        display: grid;
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .scSidebar {
+        width: 100%;
+        min-width: 0;
+        position: static;
+    }
+
+    .scMain {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .scGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .scCard {
+        padding: 18px 14px 22px;
+        border-radius: 25px;
+    }
+
+    .scImg {
+        height: 170px;
+        margin: 10px 0 18px;
+    }
+
+    .scName {
+        font-size: 18px;
+    }
+
+    .scPrice {
+        font-size: 17px;
+    }
+
+    .scBox {
+        padding: 18px 14px;
+    }
+
+    .scBoxTitle {
+        font-size: 19px;
+    }
+
+    .scCats label {
+        font-size: 14px;
+        gap: 9px;
+    }
+
+    .scTrend {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .scTrend img {
+        width: 100%;
+        height: 110px;
+    }
+
+    .scTrendPrice {
+        justify-content: center;
+    }
+
+    .scToolbar {
+        flex-wrap: wrap;
+    }
+
+    .scResults {
+        font-size: 13px;
+    }
+
+    /* List View */
+    .scGrid.listView .scCard {
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .scGrid.listView .scImg {
+        flex: 0 0 180px;
+        height: 180px;
+    }
+
+    .scGrid.listView .scBadges {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .scGrid.listView .scInfo {
+        padding-top: 0;
+    }
+
+    .scGrid.listView .scName {
+        font-size: 21px;
+    }
+
+    .scGrid.listView .scDesc {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .sfContainer {
+        width: 94%;
+    }
+
+    .sfBottomRow {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* =========================================
+   MOBILE
+   576px - 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* Header */
+    .shTop {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .shTop .one {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .shTopLinks {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .shFree {
+        font-size: 13px;
+    }
+
+    .shMiddle {
+        padding: 15px 0;
+    }
+
+    .shLogo img {
+        max-width: 125px;
+    }
+
+    .shIcons {
+        gap: 12px;
+    }
+
+    .shIcon {
+        font-size: 17px;
+    }
+
+    .shSearch {
+        height: 43px;
+    }
+
+    /* Hero */
+    .shopHero {
+        min-height: 230px;
+        padding: 30px 15px;
+    }
+
+    .shopHeroContent h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .breadcrumb {
+        gap: 15px;
+    }
+
+    .breadcrumb li {
+        font-size: 14px;
+    }
+
+    .bcHome {
+        width: 30px;
+        height: 30px;
+    }
+
+    .breadcrumb li:not(:last-child)::after {
+        right: -11px;
+        font-size: 9px;
+    }
+
+    /* Shop Layout */
+    .shopContent {
+        padding: 45px 0;
+    }
+
+    .scWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 25px;
+    }
+
+    .scSidebar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .scSearch {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .scBox {
+        margin-bottom: 0;
+        padding: 18px 14px;
+    }
+
+    .scBoxTitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .scCats label {
+        font-size: 13px;
+    }
+
+    .scCats li {
+        margin-bottom: 9px;
+    }
+
+    .scTrend {
+        grid-template-columns: 65px minmax(0, 1fr);
+        text-align: left;
+    }
+
+    .scTrend img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .scTrend h5 {
+        font-size: 14px;
+    }
+
+    .scTrendPrice {
+        justify-content: flex-start;
+        font-size: 13px;
+        gap: 7px;
+    }
+
+    .scStars {
+        font-size: 10px;
+    }
+
+    /* Toolbar */
+    .scToolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .scToolLeft {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .scSort {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+
+    .scSort select {
+        font-size: 13px;
+    }
+
+    .scResults {
+        margin-left: 0;
+    }
+
+    /* Products */
+    .scGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .scCard {
+        padding: 14px 10px 18px;
+        border-width: 2px;
+        border-radius: 22px;
+    }
+
+    .scBadges {
+        gap: 5px;
+    }
+
+    .scTag {
+        font-size: 9px;
+    }
+
+    .scOff {
+        font-size: 9px;
+        padding: 5px 7px;
+    }
+
+    .scImg {
+        height: 145px;
+        margin: 10px 0 15px;
+    }
+
+    .scName {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .scRating {
+        gap: 3px;
+    }
+
+    .scRate {
+        font-size: 10px;
+    }
+
+    .scPrice {
+        font-size: 15px;
+    }
+
+    /* إظهار أزرار المنتجات على الموبايل */
+    .scActions {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .scCard:hover {
+        transform: none;
+    }
+
+    /* List View */
+    .scGrid.listView .scCard {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .scGrid.listView .scImg {
+        width: 100%;
+        flex: none;
+        height: 190px;
+        order: 1;
+    }
+
+    .scGrid.listView .scInfo {
+        width: 100%;
+        order: 2;
+    }
+
+    .scGrid.listView .scBadges {
+        position: static;
+        order: 0;
+    }
+
+    .scGrid.listView .scName {
+        font-size: 19px;
+    }
+
+    .scGrid.listView .scDesc {
+        font-size: 13px;
+    }
+
+    .scGrid.listView .scListBtns {
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    .sfTop {
+        padding: 40px 0;
+    }
+
+    .sfBottom {
+        padding: 20px 0;
+    }
+
+    .sfBottomRow {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sfBottomLinks {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sfBottomLinks li {
+        padding: 0 10px;
+    }
+
+    .sfBottomLinks a {
+        font-size: 12px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+   381px - 575px
+========================================= */
+
+@media (max-width: 575px) {
+
+    .shContainer {
+        width: 94%;
+    }
+
+    .shTopLinks {
+        display: none;
+    }
+
+    .shMiddle {
+        gap: 10px;
+    }
+
+    .shLogo img {
+        max-width: 105px;
+    }
+
+    .shIcons {
+        gap: 9px;
+    }
+
+    .shopHero {
+        min-height: 200px;
+    }
+
+    .shopHeroContent h1 {
+        font-size: 25px;
+    }
+
+    .breadcrumb {
+        gap: 12px;
+    }
+
+    .breadcrumb li {
+        font-size: 12px;
+    }
+
+    .scWrapper {
+        padding: 0 12px;
+        gap: 20px;
+    }
+
+    .scSidebar {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .scBox {
+        padding: 14px 10px;
+    }
+
+    .scBoxTitle {
+        font-size: 16px;
+    }
+
+    .scSearch {
+        height: 43px;
+        padding: 0 15px;
+    }
+
+    .scSearch input {
+        font-size: 14px;
+    }
+
+    .scCats label {
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .scCheck {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+    }
+
+    .scTrend {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .scTrend img {
+        width: 100%;
+        height: 75px;
+    }
+
+    .scTrendPrice {
+        justify-content: center;
+    }
+
+    .scGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .scCard {
+        padding: 12px 8px 15px;
+        border-radius: 18px;
+    }
+
+    .scImg {
+        height: 120px;
+        margin: 8px 0 12px;
+    }
+
+    .scName {
+        font-size: 13px;
+    }
+
+    .scPrice {
+        font-size: 14px;
+    }
+
+    .scTag,
+    .scOff {
+        font-size: 8px;
+    }
+
+    .scViewBtn {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .scResults {
+        font-size: 11px;
+    }
+}
+
+/* =========================================
+   EXTRA SMALL MOBILE
+   320px - 380px
+========================================= */
+
+@media (max-width: 380px) {
+
+    .shLogo img {
+        max-width: 90px;
+    }
+
+    .shIcons {
+        gap: 7px;
+    }
+
+    .shIcon {
+        font-size: 15px;
+    }
+
+    .shBurger {
+        font-size: 18px;
+    }
+
+    .shopHeroContent h1 {
+        font-size: 22px;
+    }
+
+    .breadcrumb {
+        gap: 10px;
+    }
+
+    .breadcrumb li {
+        font-size: 11px;
+    }
+
+    .scWrapper {
+        padding: 0 10px;
+    }
+
+    .scSidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .scBoxTitle {
+        font-size: 17px;
+    }
+
+    .scCats label {
+        font-size: 13px;
+    }
+
+    .scTrend {
+        grid-template-columns: 70px minmax(0, 1fr);
+        text-align: left;
+    }
+
+    .scTrend img {
+        width: 70px;
+        height: 65px;
+    }
+
+    .scTrendPrice {
+        justify-content: flex-start;
+    }
+
+    .scGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .scCard {
+        padding: 10px 6px 13px;
+        border-radius: 15px;
+    }
+
+    .scImg {
+        height: 105px;
+    }
+
+    .scName {
+        font-size: 12px;
+    }
+
+    .scPrice {
+        font-size: 13px;
+    }
+
+    .scRating {
+        flex-wrap: wrap;
+    }
+
+    .scSort {
+        padding: 9px;
+    }
+
+    .scSort select {
+        max-width: 130px;
+    }
+
+    .smPanel {
+        width: 300px;
+    }
+}
+
+/* =========================================
+   LIST VIEW - ALL DEVICES
+========================================= */
+
+.scGrid.listView {
+    grid-template-columns: 1fr;
+}
+
+.scGrid.listView .scCard {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.scGrid.listView .scImg img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.scGrid.listView .scDesc {
+    display: block;
+}
+
+.scGrid.listView .scListBtns {
+    display: flex;
+}
+
+/* =========================================
+   TOUCH DEVICES
+========================================= */
+
+@media (hover: none) {
+
+    .scCard:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .scActions {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .scInfo {
+        opacity: 1;
+    }
+
+    .scImgHover {
+        opacity: 0;
+    }
+
+    .scImgDefault {
+        opacity: 1;
+    }
+}
+
+/* =========================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================= */
+
+.scWrapper,
+.scMain,
+.scSidebar,
+.scGrid,
+.scCard,
+.scInfo,
+.sfContainer {
+    min-width: 0;
+}
+
+.scCard img,
+.sfContainer img {
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+@media  (max-width: 992px) {
+    .scGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
