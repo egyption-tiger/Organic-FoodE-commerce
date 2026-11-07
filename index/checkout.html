@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Organic</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../style/media.css">
+
+    <link rel="stylesheet" href="../style/shop.css">
+    <link rel="stylesheet" href="../style/cart-checkout.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="shopHeader">
+    <div class="shContainer">
+
+      
+
+        <!-- اللوجو + السيرش + الأيقونات -->
+        <div class="shMiddle">
+            <div class="shLogoWrap">
+                <i class="fa-solid fa-bars shBurger" id="smOpen"></i>
+                <a href="index.html" class="shLogo">
+                    <img src="../images/images01.png" alt="Organi">
+                </a>
+            </div>
+
+            <form class="shSearch">
+                <span class="shSearchCat">All |</span>
+                <input type="search" placeholder="What are you shopping for?">
+                <button type="submit" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="shIcons">
+                <a href="#" class="shIcon"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="shIcon"><i class="fa-regular fa-heart"></i></a>
+                <a href="#" class="shIcon shCart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="shBadge">2</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- اللينكات -->
+      <nav class="shNav">
+    <ul class="shMenu">
+
+        <!-- Home -->
+        <li class="shItem">
+            <a href="./index.html" class="shLink active">Home</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Home Pages</p>
+                <li><a href="./index.html">Home V.1</a></li>
+                <li><a href="./index.html">Home V.2</a></li>
+                <li><a href="./index.html">Home V.3</a></li>
+                <li><a href="./index.html">Home V.4</a></li>
+                <li><a href="./index.html">Home V.5</a></li>
+                <li><a href="./index.html">Home V.6</a></li>
+            </ul>
+        </li>
+
+        <!-- Shop -->
+        <li class="shItem">
+            <a href="./shop.html" class="shLink">Shop</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Shop Pages</p>
+                <li><a href="./shop.html">Shop Sidebar</a></li>
+                <li><a href="./shop.html">Shop List</a></li>
+                <li><a href="./shop.html">Shop List 3</a></li>
+                <li><a href="./shop.html">Shop List 4</a></li>
+                <li><a href="./shop.html">Shop List 5</a></li>
+                <li><a href="./shop.html">Shop List 6</a></li>
+            </ul>
+        </li>
+
+        <!-- Blog -->
+        <li class="shItem">
+            <a href="#" class="shLink">Blog</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Blog Pages</p>
+                <li><a href="#">Blog Details</a></li>
+                <li><a href="#">Blog Grid</a></li>
+                <li><a href="#">Blog List 1</a></li>
+                <li><a href="#">Blog List 2</a></li>
+                <li><a href="#">Blog List 3</a></li>
+                <li><a href="#">Blog List 4</a></li>
+            </ul>
+        </li>
+
+        <!-- Portfolio (من غير dropdown) -->
+        <li class="shItem">
+            <a href="#" class="shLink">Portfolio</a>
+        </li>
+
+        <!-- Pages (Mega) -->
+        <li class="shItem shMegaItem">
+            <a href="#" class="shLink">Pages</a>
+            <div class="shMega">
+                <div class="shMegaPromo">
+                    <img src="../images/images03.png" alt="">
+                    <div class="shMegaText">
+                        <span>100% Pure</span>
+                        <h4>Natural Vegetable</h4>
+                        <p>Fresh Vegetables Sale 30% Off</p>
+                        <a href="#" class="shMegaBtn">View More</a>
+                    </div>
+                </div>
+
+                <div class="shMegaCol">
+                    <h5>All Inner Page</h5>
+                    <ul>
+                        <li><a href="#">Cart Page</a></li>
+                        <li><a href="#">Faqs Page</a></li>
+                        <li><a href="#">About Us V.1</a></li>
+                        <li><a href="#">About Us V.2</a></li>
+                        <li><a href="#">Checkout Page</a></li>
+                        <li><a href="#">Compare Page</a></li>
+                    </ul>
+                </div>
+
+                <div class="shMegaCol">
+                    <h5>All Inner Page</h5>
+                    <ul>
+                        <li><a href="#">Vendor Page</a></li>
+                        <li><a href="#">Vendor Profile</a></li>
+                        <li><a href="#">Vendor Dashboard</a></li>
+                        <li><a href="#">Product Details V.1</a></li>
+                        <li><a href="#">Product Details V.2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Veg Sales -->
+        <li class="shItem">
+            <a href="#" class="shLink">Veg Sales</a>
+            <ul class="shSub">
+                <p class="shSubTitle">All Sales Pages</p>
+                <li><a href="#">Veg Offers</a></li>
+                <li><a href="#">Fruit Offers</a></li>
+                <li><a href="#">Weekly Deals</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!-- <a href="#" class="shRecent">Recent Viewed Products <i class="fa-solid fa-arrow-right"></i></a> -->
+</nav>
+    </div>
+
+    <!-- الخط الملون -->
+    <div class="shLine"></div>
+</header>
+<!-- HERO -->
+<section class="shopHero">
+    <div class="shopHeroContent">
+        <h1>Checkout</h1>
+
+        <ul class="breadcrumb">
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li>Checkout</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CHECKOUT -->
+<section class="checkoutPage">
+
+    <div class="checkoutContainer">
+
+        <div class="checkoutTitle">
+            <h2>Complete Your Order</h2>
+            <p>Fill in your details to place your order.</p>
+        </div>
+
+        <form id="checkoutForm">
+
+            <div class="checkoutLayout">
+
+                <!-- CUSTOMER INFORMATION -->
+                <div class="checkoutFormContent">
+
+                    <div class="checkoutBox">
+
+                        <h3>
+                            <i class="fa-regular fa-user"></i>
+                            Billing Details
+                        </h3>
+
+                        <div class="checkoutInputs">
+
+                            <div class="checkoutField">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text"
+                                       id="fullName"
+                                       name="fullName"
+                                       placeholder="Enter your full name"
+                                       required>
+                            </div>
+
+                            <div class="checkoutField">
+                                <label for="email">Email Address *</label>
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       placeholder="example@email.com"
+                                       required>
+                            </div>
+
+                            <div class="checkoutField">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone"
+                                       placeholder="Enter your phone number"
+                                       required>
+                            </div>
+
+                            <div class="checkoutField">
+                                <label for="city">City *</label>
+                                <input type="text"
+                                       id="city"
+                                       name="city"
+                                       placeholder="Your city"
+                                       required>
+                            </div>
+
+                            <div class="checkoutField fullField">
+                                <label for="address">Street Address *</label>
+                                <input type="text"
+                                       id="address"
+                                       name="address"
+                                       placeholder="House number and street name"
+                                       required>
+                            </div>
+
+                            <div class="checkoutField">
+                                <label for="postalCode">Postal Code</label>
+                                <input type="text"
+                                       id="postalCode"
+                                       name="postalCode"
+                                       placeholder="Postal code">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PAYMENT -->
+                    <div class="checkoutBox">
+
+                        <h3>
+                            <i class="fa-regular fa-credit-card"></i>
+                            Payment Method
+                        </h3>
+
+                        <label class="paymentOption">
+
+                            <input type="radio"
+                                   name="payment"
+                                   value="Cash on Delivery"
+                                   checked>
+
+                            <span>
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                Cash On Delivery
+                            </span>
+
+                        </label>
+
+                        <p class="paymentNote">
+                            Pay when your order arrives.
+                        </p>
+
+                    </div>
+
+                    <!-- NOTES -->
+                    <div class="checkoutBox">
+
+                        <h3>
+                            <i class="fa-regular fa-note-sticky"></i>
+                            Order Notes
+                        </h3>
+
+                        <textarea
+                            id="orderNotes"
+                            name="orderNotes"
+                            placeholder="Notes about your order (optional)">
+                        </textarea>
+
+                    </div>
+
+                </div>
+
+                <!-- ORDER SUMMARY -->
+                <aside class="checkoutSummary">
+
+                    <h3>Your Order</h3>
+
+                    <div class="checkoutProductsHead">
+                        <span>Product</span>
+                        <span>Total</span>
+                    </div>
+
+                    <div id="checkoutProducts">
+                        <!-- JavaScript -->
+                    </div>
+
+                    <div class="checkoutTotals">
+
+                        <div class="summaryRow">
+                            <span>Subtotal</span>
+                            <strong id="checkoutSubtotal">$0.00</strong>
+                        </div>
+
+                        <div class="summaryRow">
+                            <span>Discount (15%)</span>
+                            <strong id="checkoutDiscount">-$0.00</strong>
+                        </div>
+
+                        <div class="summaryRow">
+                            <span>VAT (5%)</span>
+                            <strong id="checkoutVat">$0.00</strong>
+                        </div>
+
+                        <div class="summaryRow summaryTotal">
+                            <span>Total</span>
+                            <strong id="checkoutTotal">$0.00</strong>
+                        </div>
+
+                    </div>
+
+                    <button type="submit"
+                            id="placeOrder"
+                            class="placeOrderBtn">
+
+                        Place Order
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                    <a href="./cart.html" class="backToCart">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Back To Cart
+                    </a>
+
+                    <div class="secureCheckout">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Secure Shopping Experience
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="orderSuccess" class="orderSuccess" hidden>
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2>Thank You For Your Order!</h2>
+
+            <p>Your order has been received successfully.</p>
+
+            <span id="orderNumber"></span>
+
+            <a href="./shop.html">Continue Shopping</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="cartOverlay" id="cartOverlay"></div>
+
+<aside class="cartSidebar" id="cartSidebar">
+    <div class="cartHead">
+        <h4>Organic Products</h4>
+        <button class="cartClose" id="cartClose" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- المنتجات بتتحط هنا بالـ JS -->
+    <div class="cartItems" id="cartItems"></div>
+
+    <div class="cartTotals">
+        <div class="cartRow"><span>Subtotal:</span><span id="cartSubtotal">$0.00</span></div>
+        <div class="cartRow"><span>Vat 5%:</span><span id="cartVat">$0.00</span></div>
+        <div class="cartRow"><span>Discount 15%:</span><span id="cartDiscount">- $0.00</span></div>
+        <div class="cartRow cartTotal"><span>Total:</span><span id="cartTotalVal">$0.00</span></div>
+    </div>
+
+<div class="cartBtns">
+    <a href="./cart.html" class="cartBtn">
+        VIEW CART
+    </a>
+
+    <a href="./checkout.html" class="cartBtn">
+        CHECKOUT
+    </a>
+</div>
+</aside>
+<!-- FOOTER -->
+<script src="../js/checkout.js"></script>
+<script src="../js/comon.js"></script>
+
+</body>
+</html>
