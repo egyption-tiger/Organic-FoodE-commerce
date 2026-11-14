@@ -2054,3 +2054,14 @@ ul{ list-style:none; }
         gap: 8px;
     }
 }
+
+
+/* عرض القايمة الجانبية */
+.offcanvas.offcanvas-start{
+    width: 300px;
+    max-width: 85vw;
+}
+.offcanvas-backdrop.show{ opacity: .6; }
+
+.offcanvas-header{ border-bottom: 1px solid #eee; }
+.offcanvas-body{ padding-top: 10px; }

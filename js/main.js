@@ -456,3 +456,28 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "Escape") closeCart();
     });
 });
+
+
+
+
+window.addEventListener("load", function () {
+    const header = document.querySelector(".secHeader");
+    const nav = document.querySelector(".dowenNav");
+    if (!header || !nav) return;
+
+    const triggerPoint = header.offsetHeight;
+
+    function handleScroll() {
+        if (window.scrollY > triggerPoint) {
+            if (!nav.classList.contains("sticky")) {
+                header.style.paddingBottom = (nav.offsetHeight + 10) + "px";
+                nav.classList.add("sticky");
+            }
+        } else {
+            nav.classList.remove("sticky");
+            header.style.paddingBottom = "0";
+        }
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+});

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Organic</title>
+    <link rel="icon" href="../images/images01.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/shop.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/pages.css">
+</head>
+<body data-page="contact">
+
+<div id="siteHeader"></div>
+
+<section class="shopHero">
+    <div class="shopHeroContent">
+        <h1>Contact Us</h1>
+        <ul class="breadcrumb">
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><a href="../index.html">Home</a></li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</section>
+
+<section class="pgSection">
+    <div class="pgContainer">
+        <div class="pgTitle">
+            <span>GET IN TOUCH</span>
+            <h2>We Would Love To Hear From You</h2>
+            <p>Have a question about an order or our products? Send us a message.</p>
+        </div>
+
+        <div class="pgGrid c3">
+            <div class="contactInfo"><i class="fa-solid fa-location-dot"></i><h4>Address</h4><p>15/A, Nest Tower, NYC</p></div>
+            <div class="contactInfo"><i class="fa-solid fa-envelope"></i><h4>Email</h4><p>info@webmail.com</p></div>
+            <div class="contactInfo"><i class="fa-solid fa-phone"></i><h4>Phone</h4><p>(+87) 4886-4174</p></div>
+        </div>
+
+        <form class="contactForm" id="contactForm">
+            <div class="row2">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="pgBtn">Send Message</button>
+            <div class="formMsg" id="formMsg">Thank you! Your message has been sent.</div>
+        </form>
+    </div>
+</section>
+
+<div id="siteFooter"></div>
+
+<script src="../js/layout.js"></script>
+<script src="../js/shop.js"></script>
+<script src="../js/comon.js"></script>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        this.reset();
+        document.getElementById("formMsg").style.display = "block";
+    });
+</script>
+</body>
+</html>

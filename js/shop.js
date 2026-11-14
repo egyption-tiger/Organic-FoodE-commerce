@@ -138,3 +138,67 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+
+// ================= SEARCH (header + sidebar) =================
+document.addEventListener("DOMContentLoaded", function () {
+    const headerForm  = document.querySelector(".shSearch");
+    const headerInput = document.querySelector(".shSearch input");
+    const sideInput   = document.querySelector(".scSearch input");
+    const grid        = document.querySelector(".scGrid");
+    if (!grid) return;
+
+    // رسالة "مفيش نتائج"
+    const noResult = document.createElement("p");
+    noResult.className = "scNoResult";
+    noResult.textContent = "No products found";
+    noResult.style.cssText = "display:none;grid-column:1/-1;text-align:center;font-size:20px;padding:30px;";
+    grid.appendChild(noResult);
+
+    function doSearch(query) {
+        const q = query.trim().toLowerCase();
+        let found = 0;
+
+        grid.querySelectorAll(".scCard").forEach(function (card) {
+            const nameEl = card.querySelector(".scName");
+            const name = nameEl ? nameEl.textContent.toLowerCase() : "";
+            const match = name.includes(q);
+            card.style.display = match ? "" : "none";
+            if (match) found++;
+        });
+
+        noResult.style.display = found === 0 ? "block" : "none";
+    }
+
+    // السيرش اللي فوق
+    if (headerInput) {
+        headerInput.addEventListener("input", function () {
+            doSearch(headerInput.value);
+            if (sideInput) sideInput.value = headerInput.value;
+        });
+    }
+    if (headerForm) {
+        headerForm.addEventListener("submit", function (e) {
+            e.preventDefault();               // يمنع إعادة تحميل الصفحة
+            doSearch(headerInput.value);
+            grid.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+    }
+
+    // سيرش السايدبار (بنفس الدالة)
+    if (sideInput) {
+        sideInput.addEventListener("input", function () {
+            doSearch(sideInput.value);
+            if (headerInput) headerInput.value = sideInput.value;
+        });
+    }
+
+    // لو جاي من صفحة تانية: shop.html?search=tomato
+    const param = new URLSearchParams(location.search).get("search");
+    if (param) {
+        if (headerInput) headerInput.value = param;
+        doSearch(param);
+    }
+});

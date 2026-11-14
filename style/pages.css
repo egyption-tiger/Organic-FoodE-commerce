@@ -1,0 +1,75 @@
+/* ===== Shared ===== */
+.pgSection { padding: 70px 15px; }
+.pgSection.gray { background: #f7f9f4; }
+.pgContainer { max-width: 1200px; margin: 0 auto; }
+.pgTitle { text-align: center; margin-bottom: 45px; }
+.pgTitle span { color: #7CC000; font-weight: 700; letter-spacing: 1px; font-size: 14px; }
+.pgTitle h2 { font-size: 36px; margin: 8px 0 10px; color: #1c2b0f; }
+.pgTitle p { color: #777; max-width: 600px; margin: 0 auto; }
+.pgGrid { display: grid; gap: 25px; }
+.pgGrid.c2 { grid-template-columns: repeat(2, 1fr); }
+.pgGrid.c3 { grid-template-columns: repeat(3, 1fr); }
+.pgGrid.c4 { grid-template-columns: repeat(4, 1fr); }
+
+/* ===== About ===== */
+.aboutIntro { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.aboutIntro img { width: 100%; border-radius: 20px; }
+.aboutIntro h2 { font-size: 34px; color: #1c2b0f; margin-bottom: 15px; }
+.aboutIntro p { color: #666; line-height: 1.8; margin-bottom: 12px; }
+.statBox { text-align: center; background: #fff; border: 2px solid #7CC000; border-radius: 20px; padding: 30px 15px; }
+.statBox strong { display: block; font-size: 38px; color: #7CC000; }
+.statBox span { color: #555; }
+.featBox { background: #fff; border-radius: 20px; padding: 30px 22px; text-align: center; box-shadow: 0 5px 25px rgba(0,0,0,.06); transition: .3s; }
+.featBox:hover { transform: translateY(-6px); }
+.featBox i { font-size: 34px; color: #7CC000; margin-bottom: 15px; }
+.featBox h4 { margin-bottom: 8px; color: #1c2b0f; }
+.featBox p { color: #777; font-size: 15px; }
+.teamBox { text-align: center; }
+.teamBox img { width: 100%; border-radius: 20px; margin-bottom: 12px; }
+.teamBox h4 { margin: 0; color: #1c2b0f; }
+.teamBox span { color: #7CC000; }
+
+/* ===== Contact ===== */
+.contactInfo { background: #fff; border: 2px solid #eef3e6; border-radius: 20px; padding: 28px 20px; text-align: center; }
+.contactInfo i { font-size: 28px; color: #7CC000; margin-bottom: 12px; }
+.contactInfo h4 { margin-bottom: 6px; color: #1c2b0f; }
+.contactInfo p { color: #666; margin: 0; }
+.contactForm { max-width: 800px; margin: 40px auto 0; background: #fff; border-radius: 20px; padding: 35px; box-shadow: 0 5px 30px rgba(0,0,0,.07); }
+.contactForm .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.contactForm input, .contactForm textarea { width: 100%; padding: 14px 16px; border: 1.5px solid #e1e8d6; border-radius: 12px; margin-bottom: 18px; font-family: inherit; font-size: 15px; outline: none; }
+.contactForm input:focus, .contactForm textarea:focus { border-color: #7CC000; }
+.contactForm textarea { min-height: 140px; resize: vertical; }
+.pgBtn { display: inline-block; background: #7CC000; color: #fff; border: 0; padding: 14px 34px; border-radius: 30px; font-weight: 700; cursor: pointer; transition: .3s; text-decoration: none; }
+.pgBtn:hover { background: #5f9600; color: #fff; }
+.formMsg { display: none; margin-top: 15px; padding: 14px; border-radius: 12px; background: #eaf7d3; color: #3d6200; text-align: center; font-weight: 600; }
+
+/* ===== Blog ===== */
+.blogCard { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 5px 25px rgba(0,0,0,.07); transition: .3s; }
+.blogCard:hover { transform: translateY(-6px); }
+.blogCard img { width: 100%; height: 220px; object-fit: cover; }
+.blogCard .body { padding: 22px; }
+.blogCard .meta { font-size: 13px; color: #888; display: flex; gap: 15px; margin-bottom: 10px; }
+.blogCard h3 { font-size: 20px; color: #1c2b0f; margin-bottom: 10px; }
+.blogCard p { color: #666; font-size: 15px; line-height: 1.7; }
+.blogCard a { color: #7CC000; font-weight: 700; text-decoration: none; }
+
+/* ===== FAQ ===== */
+.faqList { max-width: 850px; margin: 0 auto; }
+.faqList details { background: #fff; border: 2px solid #eef3e6; border-radius: 16px; padding: 18px 22px; margin-bottom: 14px; }
+.faqList details[open] { border-color: #7CC000; }
+.faqList summary { cursor: pointer; font-weight: 700; color: #1c2b0f; font-size: 17px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faqList summary::-webkit-details-marker { display: none; }
+.faqList summary::after { content: "+"; font-size: 24px; color: #7CC000; }
+.faqList details[open] summary::after { content: "−"; }
+.faqList details p { margin: 14px 0 0; color: #666; line-height: 1.8; }
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .pgGrid.c3, .pgGrid.c4 { grid-template-columns: repeat(2, 1fr); }
+    .aboutIntro { grid-template-columns: 1fr; }
+}
+@media (max-width: 576px) {
+    .pgGrid.c2, .pgGrid.c3, .pgGrid.c4, .contactForm .row2 { grid-template-columns: 1fr; }
+    .pgTitle h2 { font-size: 28px; }
+    .contactForm { padding: 22px; }
+}
